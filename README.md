@@ -20,3 +20,10 @@ This tool is for educational use only. It may only be used on my own machine, lo
 sudo apt update
 sudo apt install python3 python3-pip git wireshark tshark -y
 pip install scapy pytest
+
+## Run Examples
+
+HTTP capture:
+
+```bash
+sudo python3 ./sniffer.py --iface lo --count 25 --filter "tcp port 8000"
